@@ -2,7 +2,7 @@ import Menu from "../component/Menu";
 import EventCard from "../component/EventCard";
 import PageFooter from "../component/PageFooter";
 import vr1Print from "../images/vr1.png";
-import ai1Print from "../images/ai1.png"
+import ai1Print from "../images/ai1.png";
 import { Link } from "react-router-dom";
 
 function Evenement() {
@@ -12,8 +12,8 @@ function Evenement() {
   const vr1Paragraph = (
     <p>
       Préparez-vous à décoller pour un voyage au delà de votre imagination !
-      Vivez l'extase virtuelle lors de l'événement Vision 2.0 présenté par NextG
-      à The Infinite Expo.
+      Vivez l'extase virtuelle lors de Vision 2.0 présenté par NextG à The
+      Infinite Expo.
     </p>
   );
 
@@ -84,7 +84,6 @@ function Evenement() {
 
   const ai1Details = (
     <>
-      <h1>Today 2 Tomorrow</h1>
       <h2>Intelligence artificielle : l'avenir se dessine sous nos yeux !</h2>
       <p>
         <strong>eConnect</strong> vous invite à son événement le{" "}
@@ -207,14 +206,14 @@ function Evenement() {
   return (
     <>
       <Menu></Menu>
-      <div className="flex flex-wrap gap-1 md:gap-2 xl:gap-6 align-items-center justify-content-center mx-8 my-0">
-      <div className="flex align-items-center justify-content-center fadeinleft animation-duration-1000">
-          <EventCard 
-          header="Today 2 Tommorow"
-          print={ai1Print}
-          paragraph={ai1Paragraph}
-          details={ai1Details}
-          subtitles={ai1Subtitles}
+      <div className="flex flex-wrap gap-1 sm:mx-4 md:gap-2 mx-4 xl:gap-6 align-items-center justify-content-center my-0">
+        <div className="flex align-items-center justify-content-center fadeinleft animation-duration-1000">
+          <EventCard
+            header="Today 2 Tommorow"
+            print={ai1Print}
+            paragraph={ai1Paragraph}
+            details={ai1Details}
+            subtitles={ai1Subtitles}
           ></EventCard>
         </div>
         <div className="flex align-items-center justify-content-center fadeinright animation-duration-1000">

@@ -16,6 +16,11 @@ code {
     monospace;
 }
 
+/* Acceui */
+#displayImage{
+  background-color: black;
+}
+
 /*event card*/
 #paragraphScale{
  background-color: indianred;
@@ -31,6 +36,7 @@ code {
   background-color: rgb(5, 4, 31);
   color: aliceblue;
 }
+
 
 /* Not found page section*/
 #notFoundButton{
