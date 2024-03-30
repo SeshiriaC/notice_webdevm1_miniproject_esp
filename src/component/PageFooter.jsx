@@ -27,7 +27,7 @@ function PageFooter() {
             <h1>Contact Me</h1>
             <div id="contactLogoPanel" className="pb-4">
               <div>
-                <Link to="https://www.linkedin.com/in/hery-nirina-cecilia-razafimandimby">
+                <Link to="https://www.linkedin.com/in/hery-nirina-cecilia-razafimandimby" preventScrollReset={true} target="_blank">
                   <img
                     src={linkedInLogo}
                     id="contactLogo"
@@ -36,12 +36,12 @@ function PageFooter() {
                 </Link>
               </div>
               <div id="panel">
-                <Link to="https://github.com/SeshiriaC">
+                <Link to="https://github.com/SeshiriaC" preventScrollReset={true} target="_blank">
                   <img src={githubLogo} id="contactLogo" alt="Logo de GitHub" />
                 </Link>
               </div>
               <div>
-                <Link to="https://facebook.com/cecilianirina.razafimandimby">
+                <Link to="https://facebook.com/cecilianirina.razafimandimby" preventScrollReset={true} target="_blank">
                   <img
                     src={facebookLogo}
                     id="contactLogo"

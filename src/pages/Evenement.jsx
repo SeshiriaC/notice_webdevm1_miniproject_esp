@@ -65,7 +65,7 @@ function Evenement() {
         <li>Passionnés de technologie : Découvrez les dernières innovations</li>
         <li>Grand public : La VR vous concerne !</li>
       </ul>
-      <Link to="/booking">
+      <Link to="/booking" preventScrollReset={true} target="_blank">
         <h2>Téléportez-vous dès maintenant !</h2>
       </Link>
     </>
@@ -187,7 +187,7 @@ function Evenement() {
         L'inscription à l'événement est gratuite mais obligatoire. Réservez
         votre place dès maintenant pour ne rien manquer de cette aventure
         extraordinaire :
-        <Link to="/booking">
+        <Link to="/booking" preventScrollReset={true} target="_blank">
           <h2>Inscrivez-vous dès maintenant !</h2>
         </Link>
       </p>

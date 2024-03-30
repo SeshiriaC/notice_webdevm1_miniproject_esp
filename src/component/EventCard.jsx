@@ -2,16 +2,13 @@ import { useState } from "react";
 import { Card } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
-import MyImage from "./DisplayImage";
+
 
 function EventCard(props) {
   const print = (
-    <MyImage imageSrc={props.hint}></MyImage>
-    /*
     <>
       <img src={props.print} alt="Affiche de l'évènement" className="border-round-top" />
     </>
-    */
   );
 
   const [visible, setVisible] = useState(false);
