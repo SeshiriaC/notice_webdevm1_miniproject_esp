@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
+import { Button } from "primereact/button";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -34,20 +35,19 @@ const ContactForm = () => {
         }
       );
 
-    // Clears the form after sending the email
+    // efface le contenu des cases quand le mail est envoyé
     e.target.reset();
   };
 
   const [value, setValue] = useState("");
-  const [text, setText] = useState("");
 
   return (
-    <div className="ard flex justify-content-center">
+    <div className="card flex justify-content-center">
       <div>
         <h2 className="text-color">Contact</h2>
         <div>
           <form onSubmit={sendEmail}>
-            <span className="p-float-label mb-5 w-full">
+            <span className="p-float-label mb-5">
               <InputText
                 id="name"
                 valueName={value}
@@ -55,7 +55,7 @@ const ContactForm = () => {
               />
               <label htmlFor="name">Nom</label>
             </span>
-            <span className="p-float-label mb-5 w-full">
+            <span className="p-float-label mb-5">
               <InputText
                 id="email"
                 valueEmail={value}
@@ -63,17 +63,26 @@ const ContactForm = () => {
               />
               <label htmlFor="email">Adresse mail</label>
             </span>
-            <span className="p-float-label mb-5">
+            <span className="p-float-label m-0 p-0">
               <InputTextarea
                 id="description"
-                value={value}
+                valueMessage={value}
                 onChange={(e) => setValue(e.target.value)}
-                rows={5}
-                cols={30}
+                rows={8}
+                cols={40}
               />
               <label htmlFor="message">Message</label>
             </span>
-            <input type="submit" value="Send" disabled={isSubmitting} />
+            <span className="my-0 justify-content-center">
+              <Button
+                label="Envoyer"
+                icon="pi pi-check-circle"
+                id="contactSubmit"
+                type="submit"
+                value="Send"
+                disabled={isSubmitting}
+              ></Button>
+            </span>
             {stateMessage && <p>{stateMessage}</p>}
           </form>
         </div>

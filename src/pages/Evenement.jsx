@@ -5,9 +5,9 @@ import EventList from "../component/EventList";
 function Evenement() {
   return (
     <>
-      <Menu></Menu>
-      <EventList></EventList>
-      <PageFooter></PageFooter>
+      <Menu/>
+      <EventList/>
+      <PageFooter/>
     </>
   );
 }

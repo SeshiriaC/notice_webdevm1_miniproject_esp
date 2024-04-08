@@ -130,5 +130,18 @@ code {
   margin-inline: 2vw;
 }
 
+/* Contact page */
+#contactSubmit{
+  background-color: rgb(240, 240, 240);
+  border-color: rgba(65, 65, 65, 0.6);
+  color: rgb(103, 110, 111);
+  margin-top: 0;
+  margin-bottom: 6.25vh;
+}
+
+#contactSubmit:hover{
+  background-color: rgb(5, 4, 31);
+  color: aliceblue;
+}
 
 

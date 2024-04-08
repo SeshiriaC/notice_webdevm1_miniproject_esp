@@ -5,22 +5,10 @@ import { Card } from "primereact/card";
 import { Divider } from "primereact/divider";
 
 function Home() {
-  const header = (
-    <>
-      <Menu></Menu>
-    </>
-  );
-
-  const foot = (
-    <>
-      <PageFooter></PageFooter>
-    </>
-  );
-
   return (
     <div id="pageContainer">
       <div>
-        {header}
+        <Menu/>
         <div
           className="flex flex-wrap justify-content-center align-item-center"
           id="displayImage"
@@ -45,7 +33,7 @@ function Home() {
         </div>
         <Divider align="center"></Divider>
       </div>
-      {foot}
+      <PageFooter/>
     </div>
   );
 }
