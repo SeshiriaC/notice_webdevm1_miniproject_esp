@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Galleria } from "primereact/galleria";
-import ai1Image from "../images/ai1.png";
-import vr1Image from "../images/vr1.png";
+import ai1Image from "../images/ai1noDetails.png";
+import vr1Image from "../images/vr1noDetails.png";
+import neurolinkImage from "../images/neurolinknoDetails.png";
 
 function MyImage() {
   const [images, setImages] = useState(null);
@@ -27,6 +28,10 @@ function MyImage() {
         itemImageSrc: vr1Image,
         alt: "Affiche de l'évènement Vision 2.0",
       },
+      {
+        itemImageSrc: neurolinkImage,
+        alt: "Affiche de l'évènement The NeuroLink Experience",
+      },
     ]);
   }, []);
 
@@ -50,7 +55,7 @@ function MyImage() {
         showThumbnails={false}
         circular
         autoPlay
-        transitionInterval={6000}
+        transitionInterval={2000}
       />
     </div>
   );

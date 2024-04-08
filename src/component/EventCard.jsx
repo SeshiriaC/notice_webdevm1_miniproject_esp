@@ -3,11 +3,14 @@ import { Card } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
 
-
 function EventCard(props) {
   const print = (
     <>
-      <img src={props.print} alt="Affiche de l'évènement" className="border-round-top" />
+      <img
+        src={props.print}
+        alt="Affiche de l'évènement"
+        className="border-round-top"
+      />
     </>
   );
 
@@ -19,7 +22,7 @@ function EventCard(props) {
         title={props.header}
         subTitle={props.subtitles}
         header={print}
-        className="my-4 shadow-8 md:w-30rem"
+        className="my-4 shadow-8 md:mx-8"
       >
         <p className="m-2">{props.paragraph}</p>
         <div className="card flex justify-content-center m-2">

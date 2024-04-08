@@ -34,6 +34,18 @@ durable1:
 vr1:
 <a href="https://www.freepik.com/free-photo/portrait-young-african-american-man-with-vr-glasses_13611689.htm#fromView=search&page=1&position=45&uuid=9116fefc-4771-4dc2-b3e5-169f7843fae7">Image by freepik</a>
 
+vr2:
+<a href="https://www.freepik.com/free-photo/young-woman-man-with-vr-glasses-face-face_13611706.htm#fromView=search&page=4&position=30&uuid=a759d2af-f38d-4370-b10d-027db30bf273">Image by freepik</a>
+
+vr3:
+<a href="https://www.freepik.com/free-photo/young-woman-man-with-vr-glasses_13611701.htm#fromView=search&page=6&position=17&uuid=a759d2af-f38d-4370-b10d-027db30bf273">Image by freepik</a>
+
+vr4:
+<a href="https://www.freepik.com/free-photo/teenager-dressed-white-t-shirt-using-virtual-reality-glasses-with-graph-charts-numbers-lines-technology-concept_25116810.htm#from_view=detail_alsolike">Image by fxquadro on Freepik</a>
+
+vr5:
+<a href="https://www.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_19265130.htm#fromView=search&page=1&position=13&uuid=61439619-55ce-4ab5-8f9b-cda3cc3b26c2">Image by freepik</a>
+
 ai1:
 <a href="https://www.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_17850501.htm#from_view=detail_alsolike">Image by rawpixel.com on Freepik</a>
 
@@ -43,14 +55,26 @@ ai2:
 ai3:
 <a href="https://www.freepik.com/free-photo/technology-global-ai-race-information-network-connection_17850519.htm#from_view=detail_alsolike">Image by rawpixel.com on Freepik</a>
 
+ai4:
+<a href="https://www.freepik.com/free-photo/3d-rendering-biorobots-concept_29317026.htm#from_view=detail_alsolike">Image by freepik</a>
+
+ai5:
+<a href="https://www.freepik.com/free-photo/tech-support-oversees-ai-neural-network_134855678.htm#fromView=search&page=2&position=37&uuid=49c10ea2-29de-4fdb-8937-e240e55b55ae">Image by DC Studio on Freepik</a>
+
 neural1:
 <a href="https://www.freepik.com/free-photo/3d-render-network-communications-design-with-connecting-lines-dots_11767838.htm#&position=22&from_view=search&track=ais&uuid=b603b6b4-a3a9-49b4-8977-34e77a650530">Image by kjpargeter</a> on Freepik
 
 music1:
 <a href="https://www.freepik.com/free-vector/musical-notes-frame-with-text-space_16306041.htm#fromView=search&page=1&position=15&uuid=407efd18-9cde-4643-a34b-f48495341b59">Image by starline on Freepik</a>
 
+neuralink:
+<a href="https://www.freepik.com/free-photo/3d-abstract-low-poly-dark-background-with-connecting-dots-lines_7803265.htm#fromView=search&page=3&position=4&uuid=8a2c8bbf-0344-4e63-9b20-00f610950971">Image by kjpargeter on Freepik</a>
 
+connectivity:
+<a href="https://www.freepik.com/free-photo/cloud-computing-banner-background-smart-city_16016425.htm#fromView=search&page=1&position=1&uuid=1d040d6a-29ac-4846-ad65-4df9c7f124a0">Image by rawpixel.com on Freepik</a>
 
+booking:
+<a href="https://www.freepik.com/free-vector/woman-choosing-dates-calendar-appointment-booking_8351257.htm#fromView=search&page=1&position=5&uuid=fe602d2e-b834-4b32-bc39-05b0e6d24760">Image by freepik</a>
 
 
 

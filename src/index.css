@@ -16,9 +16,14 @@ code {
     monospace;
 }
 
-/* Acceui */
+/* Acceuil */
 #displayImage{
-  background-color: black;
+  background-color: #000000;
+}
+
+#imageOnPage{
+  align-self: center;
+  margin: auto;
 }
 
 /*event card*/
@@ -26,6 +31,7 @@ code {
  background-color: indianred;
 }
 
+/* Booking */
 #cardInfoButton{
   background-color: rgb(240, 240, 240);
   border-color: rgba(65, 65, 65, 0.6);
