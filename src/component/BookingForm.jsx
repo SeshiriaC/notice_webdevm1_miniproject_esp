@@ -7,19 +7,19 @@ function BookingForm() {
 
   return (
     <div className="card flex justify-content-center">
-      <div className="">
-        <h2 className="">Réservations</h2>
+      <div>
+        <h2 className="text-color">Réservations</h2>
         <div>
           <form>
-            <span className="p-float-label m-5">
+            <span className="p-float-label my-5">
               <InputText
                 id="email"
                 valueEmail={value}
                 onChange={(e) => setValue(e.target.value)}
               />
-              <label htmlFor="email">Mail</label>
+              <label htmlFor="email">Adresse mail</label>
             </span>
-            <span className="p-float-label m-5">
+            <span className="p-float-label my-5">
               <InputText
                 id="ticketnumber"
                 valueTicketNumber={value}
@@ -27,8 +27,8 @@ function BookingForm() {
               />
               <label htmlFor="ticketnumber">Nombre de Ticket</label>
             </span>
-            <span className="m-5">
-              <Button label="Détails" icon="pi pi-check-circle" id=""></Button>
+            <span className="my-5 justify-content-center">
+              <Button label="Réserver" icon="pi pi-check-circle" id="cardInfoButton"></Button>
             </span>
           </form>
         </div>

@@ -76,6 +76,10 @@ connectivity:
 booking:
 <a href="https://www.freepik.com/free-vector/woman-choosing-dates-calendar-appointment-booking_8351257.htm#fromView=search&page=1&position=5&uuid=fe602d2e-b834-4b32-bc39-05b0e6d24760">Image by freepik</a>
 
+contact:
+Image by <a href="https://www.freepik.com/free-vector/flat-design-illustration-customer-support_12982910.htm#fromView=search&page=1&position=18&uuid=c5ba765c-5b64-48ef-a089-da45add65c3f">Freepik</a>
+
+
 
 
 

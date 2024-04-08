@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import Evenement from './pages/Evenement'
 import Source from './component/Source';
 import Booking from './pages/Booking'
+import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
     path: "/booking",
     element: <Booking/>
   },
+  {
+    path: "/contact",
+    element: <Contact/>
+  },
+  
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
