@@ -1,11 +1,24 @@
 import { Menubar } from "primereact/menubar";
 import React from "react";
-import noticeIcon from "../images/notice-icon-v2-noir.png";       
+import noticeIcon from "../images/notice-icon-v2-noir.png";
+import { Link } from "react-router-dom";
+import { Avatar } from "primereact/avatar";
 
 function Menu() {
-  const end = <a href="/acceuil">
-    <img alt="logo" src={noticeIcon} height="30" className="mr-1"></img>
-  </a>;
+  const MenuStart = (
+    <div className="flex align-items-center gap-8">
+      <Avatar
+        label="C"
+        shape="circle"
+      />
+    </div>
+  );
+
+  const MenuEnd = (
+    <Link to="/acceuil">
+      <img alt="logo" src={noticeIcon} height="30" className="mr-1"></img>
+    </Link>
+  );
 
   const items = [
     {
@@ -32,7 +45,12 @@ function Menu() {
 
   return (
     <div id="menuBar">
-      <Menubar model={items} end={end} className="border-noround"/>
+      <Menubar
+        model={items}
+        start={MenuStart}
+        end={MenuEnd}
+        className="border-noround"
+      />
     </div>
   );
 }
