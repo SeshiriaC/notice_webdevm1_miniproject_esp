@@ -4,7 +4,7 @@ import PageFooter from "./PageFooter";
 function Source() {
   return (
     <div>
-      <Menu></Menu>
+      <Menu/>
       <div>
         <div className="block p-4 mb-1"><h1 className="text-color">Logos et images</h1></div>
 
@@ -38,7 +38,7 @@ function Source() {
           </a>
         </div>
       </div>
-      <PageFooter></PageFooter>
+      <PageFooter/>
     </div>
   );
 }
