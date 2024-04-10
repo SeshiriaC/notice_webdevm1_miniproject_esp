@@ -17,6 +17,21 @@ Github:
 
 vip-pass:
 <a href="https://www.freepik.com/icon/vip-pass_9000559#fromView=search&page=1&position=43&uuid=41f78858-c0a2-4bee-9d62-d9f5ca7066cc">Icon by Design Circle</a>
+
+gold:
+<a href="https://www.freepik.com/icon/diamond_6701434#fromView=search&page=1&position=46&uuid=f09fd70b-75c6-40fe-8872-33fc1dd4af7a">Icon by Freepik</a>
+
+diamond:
+<a href="https://www.freepik.com/icon/diamond_6701409#fromView=resource_detail&position=38">Icon by Freepik</a>
+
+sapphire:
+<a href="https://www.freepik.com/icon/diamond_6701402#fromView=resource_detail&position=45">Icon by Freepik</a>
+
+onyx:
+<a href="https://www.freepik.com/icon/onyx_6701406#fromView=resource_detail&position=41">Icon by Freepik</a>
+
+
+
 -----------------------------------Image-----------------------------------
 handsup:
 <a href="https://www.freepik.com/free-photo/pink-holi-powder-blowing-up-people_4449460.htm#fromView=search&page=3&position=14&uuid=dab760fc-7474-4738-b8a3-ef28a8a977e9">Image by freepik</a>

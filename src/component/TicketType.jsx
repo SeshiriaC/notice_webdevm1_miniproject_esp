@@ -1,20 +1,25 @@
+import { Divider } from "primereact/divider";
 import { Button } from 'primereact/button';
 
 
 const TicketType = (props) => {
     return (
-        <div className="col-12 sm:col-6 lg:col-12 xl:col-4 p-2">
-            <div className="p-4 border-1 surface-border surface-card border-round">
-                <div className="flex flex-column align-items-center gap-3 py-5">
-                    <img className="w-9 shadow-2 border-round" src={props.image} alt={props.category} />
-                    <div className="text-2xl font-bold">{props.category}</div>
+            <div className="mx-2 px-4 pb-4 border-1 surface-border surface-card border-round hover:shadow-8">
+                <div className="flex flex-column align-items-center py-5">
+                    <div className="text-xl text-surface-50 font-bold">{props.category}</div>
+                    <Divider/>
+                    <img className="w-3 border-round" src={props.image} alt={props.category} />
+                    <ul>
+                        <li>Confort</li>
+                        <li>Cocktail</li>
+                        <li>Front seats</li>
+                    </ul>
                 </div>
                 <div className="flex align-items-center justify-content-between">
-                    <span className="text-2xl font-semibold">${props.price}</span>
-                    <Button icon="pi pi-shopping-cart" className="p-button-rounded"></Button>
+                    <span className="text-xl text-surface-50 font-semibold">{props.price} MGA</span>
+                    <Button icon="pi pi-shopping-cart" rounded text raised severity="info" aria-label="Buy" className="p-button-rounded"/>
                 </div>
             </div>
-        </div>
     );
 };
 

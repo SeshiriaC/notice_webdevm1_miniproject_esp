@@ -65,6 +65,7 @@ const ContactForm = () => {
             </span>
             <span className="p-float-label m-0 p-0">
               <InputTextarea
+                autoResize
                 id="description"
                 valueMessage={value}
                 onChange={(e) => setValue(e.target.value)}
@@ -76,7 +77,7 @@ const ContactForm = () => {
             <span className="my-0 justify-content-center">
               <Button
                 label="Envoyer"
-                icon="pi pi-check-circle"
+                icon="pi pi-send"
                 id="contactSubmit"
                 type="submit"
                 value="Send"

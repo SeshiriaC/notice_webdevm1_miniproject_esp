@@ -6,16 +6,16 @@ import ContactForm from "../component/ContactForm";
 function Contact() {
   return (
     <div>
-    <Menu/>
-    <div className="grid md:flex md:flex-wrap justify-content-center align-self-center">
-        <div className="col md:flex m-0 p-0 justify-content-center align-self-center">
-            <img src={contactImage} width="70%" alt="Illustration contact" />
+      <Menu />
+      <div className="grid md:flex md:flex-wrap justify-content-center align-self-center">
+        <div className="col-12 justify-self-center align-self-center sm:col-6 lg:col-12 xl:col-4 p-2">
+          <img src={contactImage} width="70%" alt="Illustration contact" />
         </div>
-        <div className=" col m-0 p-0 justify-content-center align-self-center">
-            <ContactForm/>
+        <div className="col-6 justify-self-center align-self-center sm:col-4 lg:col-12 xl:col-4">
+          <ContactForm />
         </div>
-    </div>
-    <PageFooter/>
+      </div>
+      <PageFooter />
     </div>
   );
 }
