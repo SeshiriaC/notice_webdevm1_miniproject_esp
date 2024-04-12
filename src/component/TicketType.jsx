@@ -9,11 +9,7 @@ const TicketType = (props) => {
                     <div className="text-xl text-surface-50 font-bold">{props.category}</div>
                     <Divider/>
                     <img className="w-3 border-round" src={props.image} alt={props.category} />
-                    <ul>
-                        <li>Confort</li>
-                        <li>Cocktail</li>
-                        <li>Front seats</li>
-                    </ul>
+                    {props.details}
                 </div>
                 <div className="flex align-items-center justify-content-between">
                     <span className="text-xl text-surface-50 font-semibold">{props.price} MGA</span>
