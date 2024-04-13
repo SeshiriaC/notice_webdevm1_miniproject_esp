@@ -9,7 +9,7 @@ const TicketType = (props) => {
         </div>
         <Divider />
         <img
-          className="w-3 border-round"
+          className="w-3 mb-4 border-round"
           src={props.image}
           alt={props.category}
         />
