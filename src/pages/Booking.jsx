@@ -65,11 +65,13 @@ function Booking() {
             />
           </div>
         </div>
-        <div className="block">
+        <div className="block justify-content-center">
           <div>
             <h2> Réservez vos tickets dès maintenant </h2>
           </div>
-          <BookingForm />
+          <div>
+            <BookingForm />
+          </div>
         </div>
       </div>
       <PageFooter />
