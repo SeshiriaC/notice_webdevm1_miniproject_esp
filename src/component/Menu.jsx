@@ -20,7 +20,7 @@ function Menu() {
         modal
         onHide={() => setVisible(false)}
         content={({ hide }) => (
-          <div className=" border-round bg-white p-8 w-5 jutify-content-center align-self-center align-items-center">
+          <div className="flex flex-column border-round bg-white p-8 w-5 jutify-content-center align-self-center align-items-center">
             <img
                 className="w-8 mb-4 align-self-center border-round"
                 src={noticeIcon}

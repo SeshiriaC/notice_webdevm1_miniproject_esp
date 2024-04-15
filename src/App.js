@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
-import { Menubar } from 'primereact/menubar';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 ;
