@@ -183,9 +183,8 @@ function Evenement() {
       </ul>
       <h3>Inscription</h3>
       <p>
-        L'inscription à l'événement est gratuite mais obligatoire. Réservez
-        votre place dès maintenant pour ne rien manquer de cette aventure
-        extraordinaire :
+        Réservez votre place dès maintenant pour ne rien manquer de cette
+        aventure extraordinaire :
         <Link to="/booking" preventScrollReset={true} target="_blank">
           <h2>Inscrivez-vous dès maintenant !</h2>
         </Link>
@@ -206,7 +205,10 @@ function Evenement() {
   const neurolinkSubtitles = "by eConnect | 3 Août";
 
   const neurolinkParagraph = (
-    <p>De notre imagination à la réalité. eConnect met le NeuroLink 3.0 à votre disposition pour une journée!</p>
+    <p>
+      De notre imagination à la réalité. eConnect met le NeuroLink 3.0 à votre
+      disposition pour une journée!
+    </p>
   );
 
   const neurolinkDetails = (
@@ -276,7 +278,7 @@ function Evenement() {
         </li>
         <li>16h00 - 17h00: Clôture de l'événement et tirage au sort</li>
       </ul>
-      <p>Inscription gratuite jusqu'au 24 Juillet</p>
+      <p>Inscriptions ouvertes jusqu'au 31 Juillet</p>
       <Link to="/booking" preventScrollReset={true} target="_blank">
         <p>Places limitées, inscrivez-vous dès maintenant !</p>
       </Link>

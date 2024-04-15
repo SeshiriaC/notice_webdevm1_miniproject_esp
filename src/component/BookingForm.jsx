@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { InputNumber } from "primereact/inputnumber";
+import { Dialog } from "primereact/dialog";
+import noticeIcon from "../images/notice-icon-v2-noir.png";
+import { Divider } from "primereact/divider";
+import { Dropdown } from "primereact/dropdown";
 
 function BookingForm() {
   const [name, setNameValue] = useState("");
@@ -9,6 +13,13 @@ function BookingForm() {
   const [AccessTicketNumber, setAccessTicketNumberValue] = useState(0);
   const [PremiumTicketNumber, setPremiumTicketNumberValue] = useState(0);
   const [VipTicketNumber, setVipTicketNumberValue] = useState(0);
+  const [visible, setVisible] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState("");
+  const Events = [
+    { name: "Today 2 Tomorrow", code: "T2T" },
+    { name: "Vision 2.0", code: "VS2" },
+    { name: "NeurolinkExp", code: "TNE" },
+  ];
 
   return (
     <div className="card flex justify-content-center align-content-start gap-6 sm:grid">
@@ -29,6 +40,19 @@ function BookingForm() {
               onChange={(e) => setEmailValue(e.target.value)}
             />
             <label htmlFor="email">Adresse mail</label>
+          </span>
+          <span className="p-float-label my-5">
+            <Dropdown
+              value={selectedEvent}
+              onChange={(e) => setSelectedEvent(e.value)}
+              options={Events}
+              optionLabel="name"
+              placeholder="Evènement"
+              className="w-full md:w-15rem"
+              checkmark={true}
+              highlightOnSelect={false}
+            />
+            <label htmlFor="bookedEvent">Evènement souhaité</label>
           </span>
         </form>
       </div>
@@ -75,7 +99,52 @@ function BookingForm() {
             label="Réserver"
             icon="pi pi-check-circle"
             id="cardInfoButton"
+            onClick={() => setVisible(true)}
           ></Button>
+          <Dialog
+            visible={visible}
+            modal
+            onHide={() => setVisible(false)}
+            content={({ hide }) => (
+              <div className="flex flex-column border-round bg-white p-6 w-5 jutify-content-center align-self-center align-items-center">
+                <img
+                  className="w-5  align-self-center border-round"
+                  src={noticeIcon}
+                  alt="Notice Logo"
+                />
+                <Divider />
+                <div>
+                  <p>Réservation de M. {name} pour {selectedEvent.name}</p>
+                  <div className="p-0 align-items-center">
+                    <h3 className="m-0 p-0">Ticket réservés</h3>
+                    <p>
+                      Access: {AccessTicketNumber} <br />
+                      Premium: {PremiumTicketNumber}
+                      <br />
+                      VIP: {VipTicketNumber}
+                    </p>
+                    <br />
+                    <div className="flex flex-inline m-0 p-0 gap-1 align-items-center">
+                      <h3>Total: </h3>
+                      <p>
+                        MGA{" "}
+                        {AccessTicketNumber * 5000 +
+                          PremiumTicketNumber * 10000 +
+                          VipTicketNumber * 30000}
+                      </p>
+                    </div>
+                    <p>Merci pour votre réservation!</p>
+                  </div>
+                </div>
+                <Button
+                  label="Ok"
+                  icon="pi pi-check"
+                  id="cardInfoButton"
+                  onClick={(e) => hide(e)}
+                />
+              </div>
+            )}
+          ></Dialog>
         </span>
       </div>
     </div>
