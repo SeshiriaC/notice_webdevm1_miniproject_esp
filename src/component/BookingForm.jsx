@@ -16,7 +16,7 @@ function BookingForm() {
 
     const canvas = await html2canvas(ticketElmt);
     const dataURL = canvas.toDataURL("image/png");
-    downloadjs(dataURL, "download.png", "image/png");
+    downloadjs(dataURL, "your-notice-ticket.png", "image/png");
   };
 
   const [name, setNameValue] = useState("");
@@ -132,10 +132,10 @@ function BookingForm() {
                 <Divider />
                 <div>
                   <p>
-                    Réservation de M. {name} pour {selectedEvent.name}
+                    Réservation de M. {name} pour {selectedEvent.name}.
                   </p>
                   <div className="p-0 align-items-center">
-                    <h3 className="m-0 p-0">Ticket réservés</h3>
+                    <h3 className="m-0 p-0">Tickets réservés</h3>
                     <p>
                       Access: {AccessTicketNumber} <br />
                       Premium: {PremiumTicketNumber}
@@ -144,7 +144,7 @@ function BookingForm() {
                     </p>
                     <br />
                     <div className="flex flex-inline m-0 p-0 gap-1 align-items-center">
-                      <h3>Total: </h3>
+                      <h3>Total à payer: </h3>
                       <p>
                         MGA{" "}
                         {AccessTicketNumber * 5000 +
