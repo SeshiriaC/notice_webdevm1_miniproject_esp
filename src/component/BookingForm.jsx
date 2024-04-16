@@ -6,15 +6,29 @@ import { Dialog } from "primereact/dialog";
 import noticeIcon from "../images/notice-icon-v2-noir.png";
 import { Divider } from "primereact/divider";
 import { Dropdown } from "primereact/dropdown";
+import downloadjs from "downloadjs";
+import html2canvas from "html2canvas";
 
 function BookingForm() {
+  const handleCaptureClick = async () => {
+    const ticketElmt = document.querySelector("#ticket");
+    if (!ticketElmt) return;
+
+    const canvas = await html2canvas(ticketElmt);
+    const dataURL = canvas.toDataURL("image/png");
+    downloadjs(dataURL, "download.png", "image/png");
+  };
+
   const [name, setNameValue] = useState("");
   const [email, setEmailValue] = useState("");
+
   const [AccessTicketNumber, setAccessTicketNumberValue] = useState(0);
   const [PremiumTicketNumber, setPremiumTicketNumberValue] = useState(0);
   const [VipTicketNumber, setVipTicketNumberValue] = useState(0);
+
   const [visible, setVisible] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState("");
+
   const Events = [
     { name: "Today 2 Tomorrow", code: "T2T" },
     { name: "Vision 2.0", code: "VS2" },
@@ -106,7 +120,10 @@ function BookingForm() {
             modal
             onHide={() => setVisible(false)}
             content={({ hide }) => (
-              <div className="flex flex-column border-round bg-white p-6 w-5 jutify-content-center align-self-center align-items-center">
+              <div
+                id="ticket"
+                className="flex flex-column border-round bg-white p-6 w-5 jutify-content-center align-self-center align-items-center"
+              >
                 <img
                   className="w-5  align-self-center border-round"
                   src={noticeIcon}
@@ -114,7 +131,9 @@ function BookingForm() {
                 />
                 <Divider />
                 <div>
-                  <p>Réservation de M. {name} pour {selectedEvent.name}</p>
+                  <p>
+                    Réservation de M. {name} pour {selectedEvent.name}
+                  </p>
                   <div className="p-0 align-items-center">
                     <h3 className="m-0 p-0">Ticket réservés</h3>
                     <p>
@@ -136,12 +155,20 @@ function BookingForm() {
                     <p>Merci pour votre réservation!</p>
                   </div>
                 </div>
-                <Button
-                  label="Ok"
-                  icon="pi pi-check"
-                  id="cardInfoButton"
-                  onClick={(e) => hide(e)}
-                />
+                <div className="flex gap-2 justify-content-between">
+                  <Button
+                    label="Obtenir le ticket"
+                    icon="pi pi-download"
+                    id="cardInfoButton"
+                    onClick={handleCaptureClick}
+                  />
+                  <Button
+                    label="Ok"
+                    icon="pi pi-check"
+                    id="cardInfoButton"
+                    onClick={(e) => hide(e)}
+                  />
+                </div>
               </div>
             )}
           ></Dialog>

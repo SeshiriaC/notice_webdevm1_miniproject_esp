@@ -18,7 +18,7 @@ function Home() {
         <Divider align="center" />
         <div>
           <div className="m-6 align-self-center">
-            <Card title="Who We are." className="shadow-none m-0 hover:shadow-8">
+            <Card title="Qui sommes-nous." className="shadow-none m-0 hover:shadow-8">
               <p className="m-0">
                 Etudiants? Oui, nous le sommes. Le développement de ce site est
                 le tout premier projet Web que j'aurais effectué. Ce ne sera
@@ -34,7 +34,7 @@ function Home() {
         <Divider align="center" />
         <div>
           <div className="m-6 align-self-center">
-            <Card title="What Notice is." className="shadow-6 m-0">
+            <Card title="Notice, c'est quoi?" className="shadow-6 m-0">
               <p className="m-0">
                 Qu'y a -t- il d'intéressant ce mois-ci? Notice, toujours à la
                 une sur les évènements du moment. Des conférences par les
